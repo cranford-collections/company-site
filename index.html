@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cranford Holdings Group</title>
+<meta name="description" content="Cranford Holdings Group LLC designs, builds and runs consumer web apps: TrueAppraisal and Trailnotes Adventures.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #161b22;
+    --ink-quiet: #3a424d;
+    --ink-faint: #5b6470;
+    --ground: #ffffff;
+    --band: #f3f5f8;
+    --line: #e3e6ea;
+    --link: #1d4f91;
+    --link-hover: #123766;
+    --live: #1d6b3a;
+    --foot: #161b22;
+    --foot-text: #c9d0d8;
+    --foot-link: #a9c6ee;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink); font: 400 17px/1.6 "IBM Plex Sans", system-ui, sans-serif; }
+  a { color: var(--link); }
+  a:hover { color: var(--link-hover); }
+  .wrap { max-width: 1160px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+  .bar { border-bottom: 1px solid var(--line); }
+  nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 20px; padding-bottom: 20px; }
+  .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink); }
+  .mark { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: var(--ink); color: #fff; font: 500 17px/1 "IBM Plex Serif", Georgia, serif; letter-spacing: 0.02em; }
+  .brand-name { display: flex; flex-direction: column; line-height: 1.2; }
+  .brand-name strong { font-weight: 600; font-size: 17px; }
+  .brand-name span { font-size: 13px; color: var(--ink-faint); }
+  .links { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-weight: 500; font-size: 15px; }
+  .links a { text-decoration: none; color: var(--ink-quiet); padding: 10px 0; }
+  .links a.button { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid var(--ink); color: var(--ink); }
+  .links a.button:hover { background: var(--ink); color: #fff; }
+  header.hero { background: var(--band); border-bottom: 1px solid var(--line); }
+  .hero .wrap { padding-top: 104px; padding-bottom: 104px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 56px; align-items: center; }
+  h1 { margin: 0 0 24px; font-weight: 600; font-size: clamp(36px, 5vw, 54px); line-height: 1.08; letter-spacing: -0.02em; }
+  .hero p { margin: 0; font-size: 20px; color: var(--ink-quiet); }
+  .tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .tile { color: #fff; padding: 28px; min-height: 180px; display: flex; flex-direction: column; justify-content: space-between; font-weight: 600; font-size: 18px; }
+  .tile.value { background: var(--ink); }
+  .tile.travel { background: var(--link); margin-top: 40px; }
+  section { padding-top: 96px; padding-bottom: 72px; }
+  h2 { margin: 0 0 36px; font-weight: 600; font-size: 34px; letter-spacing: -0.01em; }
+  .rows { border-top: 1px solid var(--line); }
+  .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; padding: 36px 0; border-bottom: 1px solid var(--line); align-items: start; }
+  .row h3 { margin: 0 0 6px; font-weight: 600; font-size: 24px; }
+  .row .status { font-size: 14px; font-weight: 500; color: var(--ink-faint); }
+  .row .status.live { color: var(--live); }
+  .row p { margin: 0; color: var(--ink-quiet); }
+  .row a { font-weight: 600; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; justify-self: start; }
+  .company { background: var(--band); border-top: 1px solid var(--line); padding-top: 80px; padding-bottom: 80px; }
+  .company .wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; }
+  .company h2 { margin: 0; }
+  .company p { margin: 0; font-size: 19px; color: var(--ink-quiet); }
+  footer { background: var(--foot); color: var(--foot-text); }
+  footer .wrap { padding-top: 56px; padding-bottom: 56px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-size: 15px; }
+  footer strong { display: block; color: #fff; font-weight: 600; margin-bottom: 6px; }
+  footer a { color: var(--foot-link); }
+  footer a:hover { color: #fff; }
+  footer p { margin: 0; align-self: flex-end; }
+</style>
+</head>
+<body>
+  <div class="bar">
+    <nav class="wrap" aria-label="Main">
+      <a class="brand" href="#top">
+        <span class="mark" aria-hidden="true">CH</span>
+        <span class="brand-name"><strong>Cranford Holdings Group</strong><span>LLC</span></span>
+      </a>
+      <div class="links">
+        <a href="#products">Products</a>
+        <a href="#company">Company</a>
+        <a class="button" href="#contact">Contact us</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <h1>Consumer software for the moments that take an expert.</h1>
+        <p>We design, build and run web apps that answer questions people usually need a specialist for.</p>
+      </div>
+      <div class="tiles" aria-hidden="true">
+        <div class="tile value">
+          <svg width="36" height="36" viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="20" cy="20" r="15"/><circle cx="20" cy="20" r="10"/><path d="M20 13v14M16 17h6a3 3 0 0 1 0 6h-6"/></svg>
+          <span>Value</span>
+        </div>
+        <div class="tile travel">
+          <svg width="36" height="36" viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="1.6"><path d="M4 32 15 14l7 10 5-6 9 14z"/><path d="M12 32c4-3 8-3 12 0s8 3 12 0"/></svg>
+          <span>Travel</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap" id="products" aria-labelledby="products-h">
+      <h2 id="products-h">Products</h2>
+      <div class="rows">
+        <article class="row">
+          <div><h3>TrueAppraisal</h3><span class="status live">Live</span></div>
+          <p>AI-powered appraisals that identify, authenticate and value collectibles: coins, cards, art, jewelry, watches and more, in minutes.</p>
+          <a href="https://trueappraisal.ai">trueappraisal.ai <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="row">
+          <div><h3>Trailnotes Adventures</h3><span class="status">Coming soon</span></div>
+          <p>Trip planning for hard-to-plan trips: national parks, multi-stop road trips and the reservations that come with them.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="company" id="company" aria-labelledby="company-h">
+      <div class="wrap">
+        <h2 id="company-h">Company</h2>
+        <p>Cranford Holdings Group LLC designs, builds and runs its own consumer web apps. Each one takes a job that usually needs an expert and puts it in your hands.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div>
+        <strong>Contact</strong>
+        <a href="mailto:scottcranford@cranfordholdingsllc.com">scottcranford@cranfordholdingsllc.com</a>
+      </div>
+      <p>&copy; 2026 Cranford Holdings Group LLC</p>
+    </div>
+  </footer>
+</body>
+</html>
